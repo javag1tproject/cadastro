@@ -13,7 +13,7 @@ public class Configuracao {
 	    @RequestMapping("/")
 	    @ResponseBody
 	    public String ola(){
-	        return "Sistema em Teste.";
+	        return "Construção!";
 	    }
 	   
 	public static void main(String[] args){
