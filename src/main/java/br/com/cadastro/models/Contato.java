@@ -7,20 +7,27 @@ import javax.persistence.Id;
 @Entity(name="contatos")
 public class Contato {
 	
+	public  Contato() {}
+	
+	public Contato(String nome, String email){
+	    this.nome = nome;
+	    this.email = email;
+	}
+	
 	@Id
 	@GeneratedValue
-	private Long idcontatos;
+	private Long id;
 	
 	private String nome;
 	
 	private String email;
 
-	public Long getIdcontatos() {
-		return idcontatos;
+	public Long getId() {
+		return id;
 	}
 
-	public void setIdcontatos(Long idcontatos) {
-		this.idcontatos = idcontatos;
+	public void setId(Long id) {
+		this.id = id;
 	}
 
 	public String getNome() {
