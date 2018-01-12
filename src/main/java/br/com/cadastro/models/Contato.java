@@ -14,6 +14,10 @@ public class Contato {
 	    this.email = email;
 	}
 	
+	public Contato(String nome){
+	    this.nome = nome;
+	}
+	
 	@Id
 	@GeneratedValue
 	private Long id;

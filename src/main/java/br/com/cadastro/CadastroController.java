@@ -41,5 +41,15 @@ public class CadastroController {
 		return "listausuarios";
 	}
 	
+	@RequestMapping(value="apagar",method= RequestMethod.POST)
+	public String apagar(@RequestParam("id") Long id, Model model) {
+		Contato contato = repository.findOne(id);
+		repository.delete(contato);	
+		
+		
+		
+		return "redirect:listausuarios";
+	}
+	
 
 }
